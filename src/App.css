@@ -1,0 +1,173 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ 
+img{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111;
+  background-color: #eaebed;
+ border-bottom-left-radius: 50px;
+ border-bottom-right-radius: 50px;
+
+
+}
+.logo{
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  padding-left: 20px;
+ 
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color:#21605d
+}
+b{
+  font-size: 70px;
+  color: #339476;
+}
+.navItems{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.02;
+
+}
+
+.navItems li{
+  list-style: none;
+  margin: 0 15px;
+}
+.navItems li a{
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color:#21605d;
+  text-transform: capitalize;
+}
+.navItems li a:hover,.links a:hover{
+  color: #339476;
+}
+.links a{
+  font-size: 30px;
+  color:#21605d;
+  margin: 25px 10px;
+}
+
+button{
+display: flex;
+align-items: center;
+justify-content: center;
+  background-color:#21605d;
+  color:white;
+width: 200px;
+
+padding: 20px;
+border-radius: 8px;
+border: none;
+font-size: 15px;
+cursor: pointer;
+text-align: center;
+margin-top: 20px;
+ 
+
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.blocI{
+  padding: 50PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+p{
+
+  color: #21605d;
+  font-size: 20px ;
+  line-height: 1.3;
+
+}
+.db{
+  display: flex;
+}
+.section{
+  height: 100vh;
+  background-color:#eafbed ;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .center {
+    position: absolute;
+    top: 70%;
+  }
+  p{
+    font-size: 12px;
+  }
+  img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  button{
+width: 150px;
+padding: 12px;
+font-size: 15px;
+
+ 
+  }
+  .navItems li a{
+    font-size: 15px !important;
+    line-height:-1.2;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .center{
+    top:80%
+  }
+
+}
+@media only screen and (min-width: 600px) {
+  .center{
+    top:92%
+  }
+  p{
+    font-size: 15px;
+  }
+  img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+  }
+
+}
+@media only screen and (max-width: 400px) {
+  .center{
+    top:92%
+  }
+}
